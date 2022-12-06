@@ -1,0 +1,205 @@
+ <!DOCTYPE html>
+ <html>
+ <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<link rel="stylesheet" href="main1.css">
+<script src="https://kit.fontawesome.com/57313fb6ff.js" crossorigin="anonymous"></script> 
+<link href="https://fonts.googlepais.com/css?family=Popppins:400.700display=swap" rel="stylesheet">
+
+ <!--Featured Products-->
+ <section id="products" class="products py-5">
+    <div class="container">
+        <!--Section Title-->
+        <div class="row">
+            <div class="col-10 mx-auto col-sm-6 text-center">
+                <h1 class="text-capitalize product-title">
+                    Featured Products
+                </h1>
+            </div>
+        </div>
+        <!--End of Section Title-->
+        <!--Product Items-->
+        <div class="row product-items" id="product-items">
+            <!--Single Item-->
+            <div class="col-10 col-sm-8 col-lg-4 mx-auto my-3">
+                <div class="card single-item">
+                    <div class="img-container">
+                        <img src="./Images/Painting1.jpg" alt="" 
+                        class="card-img-top product-img">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text-d-flex justify-content-between text-capitalize">
+                            <h5 id="item-name">Texture Painting</h5>
+                            <span><i class="fas fa-dollar-sign"></i>350 </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--End of single item-->
+
+            <!--Single Item-->
+            <div class="col-10 col-sm-8 col-lg-4 mx-auto my-3">
+              <div class="card single-item">
+                  <div class="img-container">
+                      <img src="./Images/Painting2.jpg" alt="" 
+                      class="card-img-top product-img">
+                  </div>
+                  <div class="card-body">
+                      <div class="card-text-d-flex justify-content-between text-capitalize">
+                          <h5 id="item-name">Texture Painting</h5>
+                          <span><i class="fas fa-dollar-sign"></i>550 </span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!--End of single item-->
+
+          <!--Single Item-->
+          <div class="col-10 col-sm-8 col-lg-4 mx-auto my-3">
+              <div class="card single-item">
+                  <div class="img-container">
+                      <img src="./Images/Painting3.jpg" alt="" 
+                      class="card-img-top product-img">
+                  </div>
+                  <div class="card-body">
+                      <div class="card-text-d-flex justify-content-between text-capitalize">
+                          <h5 id="item-name">Texture Painting</h5>
+                          <span><i class="fas fa-dollar-sign"></i>250 </span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!--End of single item-->
+
+          <!--Single Item-->
+          <div class="col-10 col-sm-8 col-lg-4 mx-auto my-3">
+              <div class="card single-item">
+                  <div class="img-container">
+                      <img src="./Images/Painting1.jpg" alt="" 
+                      class="card-img-top product-img">
+                  </div>
+                  <div class="card-body">
+                      <div class="card-text-d-flex justify-content-between text-capitalize">
+                          <h5 id="item-name">Texture Painting3</h5>
+                          <span><i class="fas fa-dollar-sign"></i>350 </span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!--End of single item-->
+
+          <!--Single Item-->
+          <div class="col-10 col-sm-8 col-lg-4 mx-auto my-3">
+            <div class="card single-item">
+                <div class="img-container">
+                    <img src="./Images/Painting2.jpg" alt="" 
+                    class="card-img-top product-img">
+                </div>
+                <div class="card-body">
+                    <div class="card-text-d-flex justify-content-between text-capitalize">
+                        <h5 id="item-name">Texture Painting1</h5>
+                        <span><i class="fas fa-dollar-sign"></i>550 </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--End of single item-->
+
+        <!--Single Item-->
+        <div class="col-10 col-sm-8 col-lg-4 mx-auto my-3">
+            <div class="card single-item">
+                <div class="img-container">
+                    <img src="./Images/Painting3.jpg" alt="" 
+                    class="card-img-top product-img">
+                </div>
+                <div class="card-body">
+                    <div class="card-text-d-flex justify-content-between text-capitalize">
+                        <h5 id="item-name">Texture Painting2</h5>
+                        <span><i class="fas fa-dollar-sign"></i>250 </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--End of single item-->
+        </div>
+        <!--End of product items-->
+    </div>
+</section>
+<!--End of Featured Products-->
+</html>
+
+
+
+CSS
+<!/*Product Section*/
+#products{
+    background: #6885BC;
+}
+.product-title{
+    color: #fff;
+}
+.single-item{
+    display:inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1 px rgba(247,241,241);
+    position: relative;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    cursor: pointer;
+}
+
+.single-item:before
+{
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: ""; 
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: radial-gradient(ellipse at center,rgba(248, 248, 248, 0.35)0%,rgba(247,244,244,0)80%);
+    transition-duration: 0.3s;
+    transition-property: transform,opacity;
+}
+.single-item:hover, 
+.single-item:focus,
+.single-item:active{
+   transform: translateY(-5px); 
+}
+.single-item:hover:before,
+.single-item:focus:before,
+.single-item:active:before{
+    opacity: 1;
+    transform: translateY(5px);
+}
+
+.img-container{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.img-container{
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px)translateZ(0);
+    box-shadow: 0 0 1px rgba(0,0,0,0);
+    transition-duration: 0.3s;
+    transition-property: box-shadow, transform;
+}
+.img-container:hover,
+.product-img:hover,
+.product-img:active{
+    box-shadow: 1px 0px 1px 4px rgba(247,243,243,0.9);
+    transform: scale(1.1);
+}
+/*End Of Product Section*/
+-->
